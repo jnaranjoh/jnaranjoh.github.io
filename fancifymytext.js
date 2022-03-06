@@ -21,6 +21,7 @@ function fancy(){
 }
 
 function boring(){
+    document.getElementById("text").style.fontSize = "16pt";
     document.getElementById("text").style.transform = "none";
     document.getElementById("text").style.textShadow = "none";
     document.getElementById("text").style.justifyContent = "flex-start";
