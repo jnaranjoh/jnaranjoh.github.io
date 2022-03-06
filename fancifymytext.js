@@ -4,6 +4,7 @@ btn.addEventListener('click', () =>{
     makeBig();
 })
 function makeBig(){
+    document.getElementById("text").style.fontSize = "24px";
     alert('Hello World!');
     //alert('big');
 }
