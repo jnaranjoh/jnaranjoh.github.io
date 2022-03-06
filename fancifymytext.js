@@ -29,7 +29,7 @@ function boring(){
     document.getElementById("text").style.color="black";
     document.getElementById("text").style.textDecoration="none";
 
-    alert('Undid fancied text!');
+    alert('Removed fancied text!');
 }
 
 
