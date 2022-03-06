@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="styles.css">
 		<script src="fancifymytext.js"></script>		
 	</head>
-
+	<h1></h1>
 	<body>
 		<fieldset>
 			<legend>Text</legend>
@@ -13,5 +13,19 @@
 			</textarea>
 		</fieldset>
 		
+		<fieldset>
+			<legend>Fancify</legend>
+			<input type="button" onclick="makeBig();" name="big" value="Bigger!">
+
+			<input type="radio" name="fancify" id="fancy" onchange="change();">
+			<label for="fancy">FancyShmancy</label>
+
+
+			<input type="radio" name="fancify" id="boring" onchange="unchange();">
+			<label for="boring">BoringBetty</label>
+
+			<button onclick="moo();">Moo</button>
+
+		</fieldset>		
 	</body>
 </html>
