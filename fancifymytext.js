@@ -1,16 +1,23 @@
+const btn = document.querySelector('button');
+
+btn.addEventListener('click', () =>{
+    makeBig();
+})
 function makeBig(){
-    alert('big');
+    alert('Hello World!');
+    //alert('big');
 }
 
-function change(){
-    alert('change');
+function fancy(){
+    alert('fancy');
 }
 
-function unchange(){
-    alert('unchanged');
+function boring(){
+    alert('borings');
 }
 
 
 function moo(){
-    alert('mmooo');
+    alert('moo');
 }
+
