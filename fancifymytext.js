@@ -5,8 +5,8 @@ btn.addEventListener('click', () =>{
 })
 function makeBig(){
     document.getElementById("text").style.fontSize = "24px";
-    alert('Hello World!');
-    //alert('big');
+    //alert('Hello World!');
+    alert('big');
 }
 
 function fancy(){
