@@ -30,18 +30,22 @@ console.log("Window loaded!");
   function radio12(){
     if(document.getElementById("radio12").checked){
       document.getElementById("result").style.fontSize = "12pt";
+      document.getElementById("input-text").style.fontSize = "12pt";
+
     }
   }
 
   function radio24(){
     if(document.getElementById("radio24").checked){
       document.getElementById("result").style.fontSize = "24pt";
+      document.getElementById("input-text").style.fontSize = "24pt";
     }
   }
 
   function caps(){
     if(document.getElementById("all-caps").checked){
       document.getElementById("result").style.textTransform = "uppercase";
+      document.getElementById("intput-text").style.textTransform = "uppercase";
     }
   }
   
