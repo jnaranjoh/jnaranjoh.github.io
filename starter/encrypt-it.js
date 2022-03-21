@@ -50,7 +50,6 @@ console.log("Window loaded!");
     }
   }
   
-  
   function encryptBtnClick(){
     console.log("Encrypt Button Clicked");
     let textField = document.getElementById("input-text");
