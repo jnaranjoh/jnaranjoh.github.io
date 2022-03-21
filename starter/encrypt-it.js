@@ -17,7 +17,7 @@ console.log("Window loaded!");
     resetBtn.addEventListener("click",resetBtnClick);
 
     let radioBtn12 = document.getElementById("radio12");
-    radio12.addEventListener("click",radio12);
+    radioBtn12.addEventListener("click",radio12);
 
 
     let radioBtn24 = document.getElementById("radio24");
