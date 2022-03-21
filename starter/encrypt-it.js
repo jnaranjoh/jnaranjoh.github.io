@@ -3,7 +3,6 @@
  */
 
 console.log("Window loaded!");
-
 (function() {
   "use strict";
   window.addEventListener("load", init);
@@ -27,7 +26,7 @@ console.log("Window loaded!");
     capsBtn.addEventListener("click",caps);
 
   }
-
+  
   function radio12(){
     if(document.getElementById("radio12".checked)){
       document.getElementById("result").style.fontSize = "12pt";
@@ -67,7 +66,7 @@ console.log("Window loaded!");
    * and 'z' is shifted to 'a' (creating an alphabetical cycle).
    */
   function shiftCipher(text) {
-    text = text.toLowerCase();
+    text = text.value.toLowerCase();
     let result = "";
     for (let i = 0; i < text.length; i++) {
       if (text[i] < 'a' || text[i] > 'z') {
@@ -82,8 +81,5 @@ console.log("Window loaded!");
     }
     return result;
   }
-  // Add any other functions in this area (you should not implement your
-  // entire program in the init function, for similar reasons that
-  // you shouldn't write an entire Java program in the main method).
 
 })();
