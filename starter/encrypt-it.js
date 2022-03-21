@@ -17,7 +17,8 @@ console.log("Window loaded!");
     resetBtn.addEventListener("click",resetBtnClick);
 
     let radioBtn12 = document.getElementById("radio12");
-    radioBtn12.addEventListener("click",radio12);
+    radio12.addEventListener("click",radio12);
+
 
     let radioBtn24 = document.getElementById("radio24");
     radioBtn24.addEventListener("click",radio24);
@@ -52,7 +53,7 @@ console.log("Window loaded!");
   }
 
   function resetBtnClick(){
-    console.log("Reset Btuuon Clicked");
+    console.log("Reset Button Clicked");
     let textfield = document.getElementById("input-text");
     let result = document.getElementById("result");
     textfield.value = "";
