@@ -3,19 +3,12 @@
  */
 
 console.log("Window loaded!");
+
 (function() {
   "use strict";
-
-  /**
-   * The starting point in our program, setting up a listener
-   * for the "load" event on the window, signalling the HTML DOM has been constructed
-   * on the page. When this event occurs, the attached function (init) will be called.
-   */
   window.addEventListener("load", init);
 
-  /**
-   * TODO: Write a function comment using JSDoc.
-   */
+
   function init() {
     let encryptBtn = document.getElementById("encrypt-it");
     encryptBtn.addEventListener("click",encryptBtnClick);
@@ -24,11 +17,12 @@ console.log("Window loaded!");
     resetBtn.addEventListener("click",resetBtnClick);
 
     let radioBtn12 = document.getElementById("radio12");
-    let radioBtn24 = document.getElementById("radio24");
-    let capsBtn = document.getElementById("all-caps");
+    radioBtn12.addEventListener("click",radio12);
 
-    radioBtn12.addEventListener("click", radio12);
+    let radioBtn24 = document.getElementById("radio24");
     radioBtn24.addEventListener("click",radio24);
+
+    let capsBtn = document.getElementById("all-caps");
     capsBtn.addEventListener("click",caps);
 
   }
@@ -53,8 +47,8 @@ console.log("Window loaded!");
   function encryptBtnClick(){
     console.log("Encrypt Button Clicked");
     let textField = document.getElementById("input-text");
-    let result = shiftCipher(textField); 
-    document.getElementById("result").textContent = result;
+    let results = shiftCipher(textField); 
+    document.getElementById("result").textContent = results;
   }
 
   function resetBtnClick(){
